@@ -1,0 +1,16 @@
+version: "2.0"
+
+services:
+  # Frontend Angular service
+  client:
+    build:
+      context: .  # Since the frontend code is in the curent folder.
+    container_name: owl_bos
+    expose:
+      - 85
+    ports:
+      - "85:80" # Keep the frontend on port 80 of the host.
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/templates/default.conf.template
+    restart: always
+    # restart: unless-stopped
