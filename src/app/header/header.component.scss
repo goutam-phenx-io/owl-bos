@@ -1,0 +1,16 @@
+.nav-link {
+  font-size: 14px;
+  margin: 3px;
+  color: white;
+  letter-spacing: 0.16em;
+}
+
+.header .nav-link:hover {
+  color: #ff4c4c;
+  border-bottom: 1px solid #ff4c4c;
+}
+
+.router-link-active {
+  color: #ff4c4c;
+  border-bottom: 1px solid #ff4c4c;
+}

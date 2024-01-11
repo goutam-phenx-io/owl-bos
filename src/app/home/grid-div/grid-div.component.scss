@@ -1,0 +1,12 @@
+.img_tag {
+  min-height: 300px;
+
+  max-height: 300px;
+}
+@media screen and (max-width: 991px) {
+  .img_tag {
+    min-height: 200px;
+
+    max-height: 200px;
+  }
+}

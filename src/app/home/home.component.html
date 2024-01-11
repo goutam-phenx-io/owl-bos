@@ -1,0 +1,75 @@
+<div style="background-color: #0c0c0c; z-index: -1">
+  <app-banner></app-banner>
+
+  <div class="d-flex justify-content-center mt-5">
+    <div>
+      <span class="font_our_feature"> Our Features </span>
+    </div>
+  </div>
+
+  <!-- Asset Management -->
+  <section id="asset_management">
+    <div class="d-flex justify-content-center mt-5 mb-5">
+      <div>
+        <span class="font_our_feature" style="color: #fdfdfd">
+          Asset Management
+          <hr
+            style="margin: 0px 0px 10px; border: 1px solid #ff5353; opacity: 1"
+          />
+        </span>
+      </div>
+    </div>
+    <app-slider-div [img_list]="this.asset_img_list"></app-slider-div>
+  </section>
+
+  <!-- Billing Management -->
+
+  <section id="billing_management">
+    <div class="d-flex justify-content-center mt-5 mb-5">
+      <div>
+        <span class="font_our_feature" style="color: #fdfdfd">
+          Billing Management
+          <hr
+            style="margin: 0px 0px 10px; border: 1px solid #ff5353; opacity: 1"
+          />
+        </span>
+      </div>
+    </div>
+
+    <app-grid-div [img_list]="this.billing_img_list"></app-grid-div>
+  </section>
+
+  <!-- Accounts Management -->
+
+  <section id="account_management">
+    <div class="d-flex justify-content-center mt-5 mb-5">
+      <div>
+        <span class="font_our_feature" style="color: #fdfdfd">
+          Accounts Management
+          <hr
+            style="margin: 0px 0px 10px; border: 1px solid #ff5353; opacity: 1"
+          />
+        </span>
+      </div>
+    </div>
+
+    <app-grid-div [img_list]="this.accounts_img_list"></app-grid-div>
+  </section>
+
+  <!-- HR Management -->
+
+  <section id="hr_management">
+    <div class="d-flex justify-content-center mt-5 mb-5">
+      <div>
+        <span class="font_our_feature" style="color: #fdfdfd">
+          HR Management
+          <hr
+            style="margin: 0px 0px 10px; border: 1px solid #ff5353; opacity: 1"
+          />
+        </span>
+      </div>
+    </div>
+
+    <app-grid-div [img_list]="this.hrm_img_list"></app-grid-div>
+  </section>
+</div>

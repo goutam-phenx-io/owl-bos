@@ -1,0 +1,32 @@
+
+
+<div class="container-fluid m-0 p-0">
+  <div class="slider m-0">
+    <input type="radio" name="testimonial" id="t-1" />
+    <input type="radio" name="testimonial" id="t-2" />
+    <input type="radio" name="testimonial" id="t-3" checked />
+    <input type="radio" name="testimonial" id="t-4" />
+    <input type="radio" name="testimonial" id="t-5" />
+
+    <div class="testimonials">
+      @for(img of img_list; track img; let index = $index){
+      <label class="item" for="t-{{ index + 1 }}">
+        <img
+          src="./assets/images/{{ img.imgsrc }}"
+          class="img-fluid img_tag"
+          alt=""
+        />
+      </label>
+      }
+    </div>
+
+    <br />
+    <div class="dots" style="display: flex; justify-content: center">
+      @for(img of img_list; track img; let index = $index){
+      <div style="display: inline-flex; text-align: center">
+        <label for="t-{{ index + 1 }}"></label>
+      </div>
+      }
+    </div>
+  </div>
+</div>

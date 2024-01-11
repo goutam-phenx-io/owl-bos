@@ -1,0 +1,19 @@
+<div class="container overflow-hidden text-center mb-5">
+  <div class="row m-0 gy-5 justify-content-around">
+    @for(img of img_list; track img){
+
+    <div class="col-lg-6 col-md-6 col-sm-12">
+      <div
+        class="p-3"
+        style="border: 1px solid #fff; padding: 10px; border-radius: 15px"
+      >
+        <img
+          src="./assets/images/{{ img.imgsrc }}"
+          class="img-fluid img_tag"
+          alt=""
+        />
+      </div>
+    </div>
+    }
+  </div>
+</div>
